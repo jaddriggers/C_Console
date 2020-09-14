@@ -205,3 +205,31 @@
 //}
 
 // Chapter 8-Interacting with users
+//Sample program using scanf()
+
+int main()
+{
+	//set up the variables that scanf will fill
+
+	char firstInitial;
+	char lastInitial;
+	int age;
+	int favoriteNumber;
+
+	printf("What letter does your first name begin with?\n");
+	scanf_s(" %c", &firstInitial, 1);
+
+	printf("What letter does your last name begin with?\n");
+	scanf_s(" %c", &lastInitial, 1);
+
+	printf("How old are you?\n");
+	scanf_s(" %d", &age);
+
+	printf("What is your favorite number?\n");
+	scanf_s(" %d", &favoriteNumber);
+
+	printf("\nYour initials are %c.%c. and you are %d years old", firstInitial, lastInitial, age);
+	printf("\nyour favorite number is %d. \n\n", favoriteNumber);
+
+	return 0;
+}
