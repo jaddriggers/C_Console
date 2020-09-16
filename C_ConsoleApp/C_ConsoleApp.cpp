@@ -207,20 +207,19 @@
 // Chapter 8-Interacting with users
 //Sample program using scanf()
 
-int main()
+/*int main()
 {
-	//set up the variables that scanf will fill
-
-	char firstInitial;
+	/*set up the variables that scanf will fill
+	/*char firstInitial;
 	char lastInitial;
 	int age;
 	int favoriteNumber;
 
 	printf("What letter does your first name begin with?\n");
-	scanf_s(" %c", &firstInitial, 1);
+	scanf_s(" %c", &firstInitial);
 
 	printf("What letter does your last name begin with?\n");
-	scanf_s(" %c", &lastInitial, 1);
+	scanf_s(" %c", &lastInitial);
 
 	printf("How old are you?\n");
 	scanf_s(" %d", &age);
@@ -229,7 +228,179 @@ int main()
 	scanf_s(" %d", &favoriteNumber);
 
 	printf("\nYour initials are %c.%c. and you are %d years old", firstInitial, lastInitial, age);
-	printf("\nyour favorite number is %d. \n\n", favoriteNumber);
+	printf("\nyour favorite number is %d. \n\n", favoriteNumber);*/
 
+//	char topping[24];
+//	int slices;
+//	int month, day, year;
+//	float cost;
+//
+//	//Floating point needs & before variable e.g. &cost
+//	printf("How much does pizza cost in your area?");
+//	printf(" Enter as $XX.XX\n");
+//	scanf_s(" $%f", &cost);
+//
+//	//Pizza topping is a string so doesn't need &
+//	printf("What is your favorite one-word pizza topping? \n");
+//	scanf_s(" %s", topping, 23);
+//
+//	printf("How many slices of %s pizza", topping);
+//	printf(" can you eat in one sitting?\n");
+//	scanf_s(" %d", &slices);
+//
+//	printf("What is today's date (enter it in XX/XX/XX format).\n");
+//	scanf_s(" %d/%d/%d", &month, &day, &year);
+//
+//	printf("\n\nWhy not treat yourself to dinner on %d/%d/%d", month, day, year);
+//	printf("\nand have %d slices of %s pizza!\n", slices, topping);
+//	printf("It will only cost you $%.2f!\n\n\n", cost);
+//
+//	return 0;
+//}
+
+// Chapter 9-Crunching the numbers
+
+// Chapter 10-Powering up variables with assignments and expressions
+
+//int main()
+//{
+//	int ctr = 0;
+	//ctr = ctr + 1; 
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr + 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr + 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr + 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr + 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr - 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr - 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr - 1;
+	//printf("Counter is at %d\n", ctr);
+	//ctr = ctr - 1;
+	//printf("Counter is at %d\n", ctr);
+
+//use compund operators and place in print fuction for less code
+//	printf("Counter is at %d.\n", ctr += 1);
+//	printf("Counter is at %d.\n", ctr += 1);
+//	printf("Counter is at %d.\n", ctr += 1);
+//	printf("Counter is at %d.\n", ctr += 1);
+//	printf("Counter is at %d.\n", ctr += 1);
+//	printf("Counter is at %d.\n", ctr -= 1);
+//	printf("Counter is at %d.\n", ctr -= 1);
+//	printf("Counter is at %d.\n", ctr -= 1);
+//	printf("Counter is at %d.\n", ctr -= 1);
+//
+//	return 0;
+//}
+
+// Chapter 11- Testing data to pick a path Else if
+// if format:
+// if (condition) { code block }
+
+//#define CURRENTYEAR 2020
+//
+//int main()
+//{
+//	int yearBorn, age;
+//
+//	printf("What year were you born?\n");
+//	scanf_s(" %d", &yearBorn);
+//
+//	if (yearBorn > CURRENTYEAR)
+//
+//	{
+//		printf("Really?, You haven't been born yet?\n");
+//		printf("congratulations on time travel!\n");
+//		/*printf("Want to try again with a different year?\n");
+//		printf("What year were you born?\n");
+//		scanf_s(" %d", &yearBorn);*/
+//	}
+//
+//	age = CURRENTYEAR - yearBorn;
+//
+//	printf("\nSo this year you will turn %d on your birthday!\n", age);
+//
+//	if ((yearBorn % 4) == 0)
+//	
+//	{
+//		printf("\nYou were born in a leap year--cool!\n");
+//
+//	}
+//
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int prefer;
+//	
+//	printf("on a scale of 1-10, how happy are you?\n");
+//	scanf_s(" %d", &prefer);
+//
+//	if (prefer >= 8)
+//	{
+//		printf("Feeling good that's awesome!\n");
+//	}
+//	else if (prefer >= 5)
+//	{
+//		printf("Better than average!\n");
+//		printf("Focus on the positive and tomorrow will get better\n");
+//	}
+//
+//	else if (prefer >= 3)
+//	{
+//		printf("Sorry you're nto feeling so great.\n");
+//
+//	}
+//	else
+//	{
+//		printf("Remember it's always darkest before the dawn\n");
+//	}
+//
+//	return 0;
+//}
+// Chapter 12-
+
+//Chapter 12-Juggling Several Choices with Logical Operators
+
+int main()
+{
+	int planets = 8;
+	int friends = 6;
+	int potterBooks = 7;
+	int starWars = 6;
+	int months = 12;
+	int beatles = 4;
+	int avengers = 6;
+	int baseball = 9;
+	int basketball = 5;
+	int football = 11;
+	// first logical statement uses AND (&&) operator to test
+	if ((friends + beatles >= baseball) &&
+		(friends + avengers >= football))
+	{
+		printf("The cast of Friends and the Beatles could make a baseball team, \n");
+		printf("AND the cast of Friends plus the Avengers could make a football team.\n");
+	}
+	else
+	{
+		printf("either the Friends cannot make a baseball team with the Fab Four, \n");
+		printf("OR they can't make Football team with the Avengers (or both!)\n");
+	}
+
+	// second operator uses OR (||) to test
+	if ((starWars <= months) || potterBooks <= months)
+	{
+		printf("\nYou could read one HP book a month, and finish them all in less than a year,\n");
+		printf("OR you could see one Star Wars movie a month,\n");
+		printf("and finish them all in less than a year.\n");
+		
+	}
 	return 0;
 }

@@ -1,13 +1,16 @@
-// Beej's Guide To C.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Beej's Guide To C
+//https://beej.us/guide/bgc/html/single/bgc.html#variables
 
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int main(void)
 {
+    int i;
+    i = 2;
 
+    printf("%d\n",i);
 
 
 
