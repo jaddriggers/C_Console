@@ -369,38 +369,82 @@
 
 //Chapter 12-Juggling Several Choices with Logical Operators
 
+//int main()
+//{
+//	int planets = 8;
+//	int friends = 6;
+//	int potterBooks = 7;
+//	int starWars = 6;
+//	int months = 12;
+//	int beatles = 4;
+//	int avengers = 6;
+//	int baseball = 9;
+//	int basketball = 5;
+//	int football = 11;
+//	// first logical statement uses AND (&&) operator to test
+//	if ((friends + beatles >= baseball) &&
+//		(friends + avengers >= football))
+//	{
+//		printf("The cast of Friends and the Beatles could make a baseball team, \n");
+//		printf("AND the cast of Friends plus the Avengers could make a football team.\n");
+//	}
+//	else
+//	{
+//		printf("either the Friends cannot make a baseball team with the Fab Four, \n");
+//		printf("OR they can't make Football team with the Avengers (or both!)\n");
+//	}
+//
+//	// second operator uses OR (||) to test
+//	if ((starWars <= months) || potterBooks <= months)
+//	{
+//		printf("\nYou could read one HP book a month, and finish them all in less than a year,\n");
+//		printf("OR you could see one Star Wars movie a month,\n");
+//		printf("and finish them all in less than a year.\n");
+//		
+//	}
+//	else
+//	{
+//		printf("Neither can happen--too many books or movies,\n");
+//		printf("Not enough time!\n\n");
+//	}
+//
+//	// final logical statement uses the NOT (!) operator
+//
+//	if (!(baseball + basketball > football))
+//	{
+//		printf("\nThere are fewer baseball and basketball players\n");
+//		printf("combined than football players.");
+//		
+//	return 0;
+//}
+//
 int main()
+
 {
-	int planets = 8;
-	int friends = 6;
-	int potterBooks = 7;
-	int starWars = 6;
-	int months = 12;
-	int beatles = 4;
-	int avengers = 6;
-	int baseball = 9;
-	int basketball = 5;
-	int football = 11;
-	// first logical statement uses AND (&&) operator to test
-	if ((friends + beatles >= baseball) &&
-		(friends + avengers >= football))
+	
+	char name[25];
+	
+	
+
+	printf("what is your last name? ");
+	printf("(Please capitalize the first letter!)\n");
+		
+	int n = scanf_s(" %s", name, (unsigned)_countof(name));//use countof macro to use actual size for buffer
+
+	
+	printf("Items read = %d; Name given is: %s....\n", n, name); //check return value from scanf_s
+
+	if ((name[0] >= 'P') && (name[0] <= 'S'))
+
 	{
-		printf("The cast of Friends and the Beatles could make a baseball team, \n");
-		printf("AND the cast of Friends plus the Avengers could make a football team.\n");
+		printf("You must go to room 232 for your tickets\n ");
 	}
 	else
 	{
-		printf("either the Friends cannot make a baseball team with the Fab Four, \n");
-		printf("OR they can't make Football team with the Avengers (or both!)\n");
-	}
+		printf("You can get your tickets in the lobby\n");
 
-	// second operator uses OR (||) to test
-	if ((starWars <= months) || potterBooks <= months)
-	{
-		printf("\nYou could read one HP book a month, and finish them all in less than a year,\n");
-		printf("OR you could see one Star Wars movie a month,\n");
-		printf("and finish them all in less than a year.\n");
-		
 	}
 	return 0;
 }
+
+//Chapter 13-more operators
