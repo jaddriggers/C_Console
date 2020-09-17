@@ -560,65 +560,98 @@
 //Use for loop to give more control over while or do-while loops. 
 //Use for loop when you want to ++ or -- a variable through a loop
 
+//int main()
+//{
+//	int ctr, numMovies, rating, favRating, leastRating;
+//	char movieName[40], favorite[40], least[40];
+//
+//	//Initialize the favRating to 0 so any movie with any rating of
+//	//1 or higher will replace it and the leastRating to 10 so any
+//	//movie rated 9 or lower will replace it
+//
+//	favRating = 0;
+//	leastRating = 10;
+//
+//	//find out how many movies the user has seen and can rate
+//	//The loop will continue until they enter a number more than 0
+//
+//	do
+//	{
+//		printf("How many movies have you seen this year? ");
+//		int n = scanf_s(" %d", &numMovies );
+//		printf("items read: %d, number of movies entered: %d", n, numMovies ); //capture scanf input
+//
+//		if (numMovies < 1)
+//		{
+//			printf("No Movies!?\n Let's try again");
+//		}
+//
+//	} while (numMovies < 1);
+//
+//	for (ctr = 1; ctr <= numMovies; ctr++)
+//	{
+//		//Get the name of the movies and the rating
+//		printf("\nWhat was the name of the movie? 1 word titles only.");
+//		scanf_s(" %s", movieName, (unsigned)_countof(movieName));
+//		printf("On a scale of 1-10, what would you rate it? ");
+//		scanf_s(" %d", &rating);
+//
+//		//Check whether it's their best-rated movie so far
+//
+//		if (rating > favRating)
+//		{
+//			strcpy_s(favorite, movieName);
+//			favRating = rating;
+//		}
+//
+//		//check whether it's their worst-rated movie so far
+//
+//		if (rating < leastRating)
+//
+//		{
+//			strcpy_s(least, movieName);
+//			leastRating = rating;
+//		}
+//	}
+//
+//			printf("\nYour favorite movie was %s. \n", favorite);
+//			printf("\nYour least favorite movie was %s. \n", least);
+//
+//		
+//
+//
+//	return 0;
+//}
+
+//Chapter 16-Breaking in and out of looped code
+//Break terminates while,do-while, and for loops
+//continue forces a new cycle of a loop
+
 int main()
 {
-	int ctr, numMovies, rating, favRating, leastRating;
-	char movieName[40], favorite[40], least[40];
+	int numTest;
+	float stTest, avg, total = 0.0;
+	
+	//asks for up to 25v tests
 
-	//Initialize the favRating to 0 so any movie with any rating of
-	//1 or higher will replace it and the leastRating to 10 so any
-	//movie rated 9 or lower will replace it
-
-	favRating = 0;
-	leastRating = 10;
-
-	//find out how many movies the user has seen and can rate
-	//The loop will continue until they enter a number more than 0
-
-	do
-	{
-		printf("How many movies have you seen this year? ");
-		int n = scanf_s(" %d", &numMovies );
-		printf("items read: %d, number of movies entered: %d", n, numMovies ); //capture scanf input
-
-		if (numMovies < 1)
+	for (numTest = 0; numTest, 25; numTest++)
 		{
-			printf("No Movies!?\n Let's try again");
+			//get test scores and check if -1 was entered
+
+			printf("\nWhat is the next student's test score? ");
+			scanf_s(" %f", &stTest);
+			if (stTest < 0.0) //if teacher enters -1 loop breaks
+
+			{
+				break;
+			}
+			total += stTest;
+
 		}
-
-	} while (numMovies < 1);
-
-	for (ctr = 1; ctr <= numMovies; ctr++)
-	{
-		//Get the name of the movies and the rating
-		printf("\nWhat was the name of the movie? 1 word titles only.");
-		scanf_s(" %s", movieName, (unsigned)_countof(movieName));
-		printf("On a scale of 1-10, what would you rate it? ");
-		scanf_s(" %d", &rating);
-
-		//Check whether it's their best-rated movie so far
-
-		if (rating > favRating)
-		{
-			strcpy_s(favorite, movieName);
-			favRating = rating;
-		}
-
-		//check whether it's their worst-rated movie so far
-
-		if (rating < leastRating)
-
-		{
-			strcpy_s(least, movieName);
-			leastRating = rating;
-		}
-	}
-
-			printf("\nYour favorite movie was %s. \n", favorite);
-			printf("\nYour least favorite movie was %s. \n", least);
-
-		
-
+	avg = total / numTest;
+	printf("\nThe average is %.1f%%.\n", avg);
 
 	return 0;
 }
+
+//Chapter 17- Making the case for the switch statement
