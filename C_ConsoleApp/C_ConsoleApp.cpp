@@ -417,34 +417,143 @@
 //		
 //	return 0;
 //}
+
+//int main()
 //
-int main()
-
-{
-	
-	char name[25];
-	
-	
-
-	printf("what is your last name? ");
-	printf("(Please capitalize the first letter!)\n");
-		
-	int n = scanf_s(" %s", name, (unsigned)_countof(name));//use countof macro to use actual size for buffer
-
-	
-	printf("Items read = %d; Name given is: %s....\n", n, name); //check return value from scanf_s
-
-	if ((name[0] >= 'P') && (name[0] <= 'S'))
-
-	{
-		printf("You must go to room 232 for your tickets\n ");
-	}
-	else
-	{
-		printf("You can get your tickets in the lobby\n");
-
-	}
-	return 0;
-}
+//{
+//	
+//	char name[25];
+//	
+//	
+//
+//	printf("what is your last name? ");
+//	printf("(Please capitalize the first letter!)\n");
+//		
+//	int n = scanf_s(" %s", name, (unsigned)_countof(name));//use countof macro to use actual size for buffer
+//
+//	
+//	printf("Items read = %d; Name given is: %s....\n", n, name); //check return value from scanf_s
+//
+//	if ((name[0] >= 'P') && (name[0] <= 'S'))
+//
+//	{
+//		printf("You must go to room 232 for your tickets\n ");
+//	}
+//	else
+//	{
+//		printf("You can get your tickets in the lobby\n");
+//
+//	}
+//	return 0;
+//}
 
 //Chapter 13-more operators
+
+//Conditional operator replacing if else
+// relation ? trueStatement : falseStatement;
+
+//int main()
+//
+//{
+//	int numPick;
+//
+//	printf("Pick an Integer between 1 and 100, ");
+//	printf("The higher the better!\n");
+//
+//	int n = scanf_s(" %d", &numPick); //for int you do need &
+//	printf("Items read = %d; Number picked = %d\n", n, numPick); //check return value from scanf_s
+//
+//	printf("%d %s divisible by 2.", numPick, (numPick % 2 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 3.", numPick, (numPick % 3 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 4.", numPick, (numPick % 4 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 5.", numPick, (numPick % 5 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 6.", numPick, (numPick % 6 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 7.", numPick, (numPick % 7 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 8.", numPick, (numPick % 8 == 0) ? ("is") : ("Is not"));
+//	printf("\n%d %s divisible by 9.", numPick, (numPick % 9 == 0) ? ("is") : ("Is not"));
+//
+//
+//	return 0;
+//}
+
+// ++ and -- operator to increase/decrease variable. Prefix comes first, postfix comes after everything else is calculated
+//int main()
+//
+//{
+//	int ctr = 0;
+//
+//	printf("Counter is at %d.\n", ++ctr);
+//	printf("Counter is at %d.\n", ++ctr);
+//	printf("Counter is at %d.\n", ++ctr);
+//	printf("Counter is at %d.\n", ++ctr);
+//	printf("Counter is at %d.\n", ++ctr);
+//
+//	printf("Counter is at %d.\n", --ctr);
+//	printf("Counter is at %d.\n", --ctr);
+//	printf("Counter is at %d.\n", --ctr);
+//	printf("Counter is at %d.\n", --ctr);
+//	printf("Counter is at %d.\n", --ctr);
+//
+//	return 0;
+//}
+
+//Chapter 14-Using loops to save time and effort. 
+//Use while loop on counter example to reduce code.
+//int main()
+//
+//{
+//	int ctr = 0;
+//
+//	while (ctr < 5)
+//	{
+//		printf("Counter is at %d. \n", ctr++);
+//	}
+//
+//	while (ctr > 1)
+//	{
+//		printf("Counter is at %d. \n", ctr--);
+//	}
+//
+//
+//	return 0;
+//}
+
+//using do while loop
+
+//int main()
+//
+//{
+//	float num1, num2, result;
+//	char choice;
+//
+//	do {
+//		printf("Enter first number to multiply: ");
+//		int n = scanf_s(" %f", &num1);
+//		printf("Items read: %d. Number Chosen %.2f \n", n, num1); //check input from scanf
+//
+//		printf("Enter your second number to multiply: ");
+//		int n2 = scanf_s(" %f", &num2);
+//		printf("Items read: %d. Number Chosen %.2f \n", n2, num2); //check input from scanf
+//
+//		result = num1 * num2;
+//		printf("%.2f time %.2f equals %.2f\n\n", num1, num2, result);
+//
+//		printf("Do you want another pair of numbers to multiply (Y/N)?\n");
+//		char c = scanf_s(" %c", &choice);
+//		printf("Items read: %d. Letter chosen: %c\n", c, choice); //check input from scanf
+//
+//		//If user enters lower case y/n, this if statement will convert to Y/N
+//
+//		if (choice == 'n')
+//			{
+//				choice == 'N';
+//				printf("Goodbye!");
+//			}
+//
+//	} while (choice != 'N' && choice != 'n');
+//
+//
+//	return 0;
+//}
+
+//Chapter 15-Looking for another way to create loops
