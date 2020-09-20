@@ -22,7 +22,6 @@
 
 //int main()
 //{
-
 //char color[20];
 	//char pluralNoun[20];
 	//char celebrityF[20];
@@ -35,11 +34,9 @@
 	//printf("enter a celebrity: ");
 	//scanf_s("%s %s", celebrityF, celebrityL, 20, 20);
 
-
 //printf("Roses are %s\n", color);
 	//printf("%s are blue\n", pluralNoun);
 	//printf("I love %s %s\n", celebrityF, celebrityL);
-
 
 //return 0;
 //}
@@ -49,7 +46,7 @@
 //int main()
 //{
 //	int luckyNumbers[10] ;
-//	luckyNumbers[1] = 200; 
+//	luckyNumbers[1] = 200;
 //	printf("%d", luckyNumbers[1]);
 //
 //
@@ -142,7 +139,6 @@
 //	return 0;
 //}
 
-
 // Chapter 6-Adding words to programs
 
 //int main()
@@ -230,428 +226,667 @@
 	printf("\nYour initials are %c.%c. and you are %d years old", firstInitial, lastInitial, age);
 	printf("\nyour favorite number is %d. \n\n", favoriteNumber);*/
 
-//	char topping[24];
-//	int slices;
-//	int month, day, year;
-//	float cost;
+	//	char topping[24];
+	//	int slices;
+	//	int month, day, year;
+	//	float cost;
+	//
+	//	//Floating point needs & before variable e.g. &cost
+	//	printf("How much does pizza cost in your area?");
+	//	printf(" Enter as $XX.XX\n");
+	//	scanf_s(" $%f", &cost);
+	//
+	//	//Pizza topping is a string so doesn't need &
+	//	printf("What is your favorite one-word pizza topping? \n");
+	//	scanf_s(" %s", topping, 23);
+	//
+	//	printf("How many slices of %s pizza", topping);
+	//	printf(" can you eat in one sitting?\n");
+	//	scanf_s(" %d", &slices);
+	//
+	//	printf("What is today's date (enter it in XX/XX/XX format).\n");
+	//	scanf_s(" %d/%d/%d", &month, &day, &year);
+	//
+	//	printf("\n\nWhy not treat yourself to dinner on %d/%d/%d", month, day, year);
+	//	printf("\nand have %d slices of %s pizza!\n", slices, topping);
+	//	printf("It will only cost you $%.2f!\n\n\n", cost);
+	//
+	//	return 0;
+	//}
+
+	// Chapter 9-Crunching the numbers
+
+	// Chapter 10-Powering up variables with assignments and expressions
+
+	//int main()
+	//{
+	//	int ctr = 0;
+		//ctr = ctr + 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr + 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr + 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr + 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr + 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr - 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr - 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr - 1;
+		//printf("Counter is at %d\n", ctr);
+		//ctr = ctr - 1;
+		//printf("Counter is at %d\n", ctr);
+
+	//use compund operators and place in print fuction for less code
+	//	printf("Counter is at %d.\n", ctr += 1);
+	//	printf("Counter is at %d.\n", ctr += 1);
+	//	printf("Counter is at %d.\n", ctr += 1);
+	//	printf("Counter is at %d.\n", ctr += 1);
+	//	printf("Counter is at %d.\n", ctr += 1);
+	//	printf("Counter is at %d.\n", ctr -= 1);
+	//	printf("Counter is at %d.\n", ctr -= 1);
+	//	printf("Counter is at %d.\n", ctr -= 1);
+	//	printf("Counter is at %d.\n", ctr -= 1);
+	//
+	//	return 0;
+	//}
+
+	// Chapter 11- Testing data to pick a path Else if
+	// if format:
+	// if (condition) { code block }
+
+	//#define CURRENTYEAR 2020
+	//
+	//int main()
+	//{
+	//	int yearBorn, age;
+	//
+	//	printf("What year were you born?\n");
+	//	scanf_s(" %d", &yearBorn);
+	//
+	//	if (yearBorn > CURRENTYEAR)
+	//
+	//	{
+	//		printf("Really?, You haven't been born yet?\n");
+	//		printf("congratulations on time travel!\n");
+	//		/*printf("Want to try again with a different year?\n");
+	//		printf("What year were you born?\n");
+	//		scanf_s(" %d", &yearBorn);*/
+	//	}
+	//
+	//	age = CURRENTYEAR - yearBorn;
+	//
+	//	printf("\nSo this year you will turn %d on your birthday!\n", age);
+	//
+	//	if ((yearBorn % 4) == 0)
+	//
+	//	{
+	//		printf("\nYou were born in a leap year--cool!\n");
+	//
+	//	}
+	//
+	//
+	//	return 0;
+	//}
+
+	//int main()
+	//{
+	//	int prefer;
+	//
+	//	printf("on a scale of 1-10, how happy are you?\n");
+	//	scanf_s(" %d", &prefer);
+	//
+	//	if (prefer >= 8)
+	//	{
+	//		printf("Feeling good that's awesome!\n");
+	//	}
+	//	else if (prefer >= 5)
+	//	{
+	//		printf("Better than average!\n");
+	//		printf("Focus on the positive and tomorrow will get better\n");
+	//	}
+	//
+	//	else if (prefer >= 3)
+	//	{
+	//		printf("Sorry you're nto feeling so great.\n");
+	//
+	//	}
+	//	else
+	//	{
+	//		printf("Remember it's always darkest before the dawn\n");
+	//	}
+	//
+	//	return 0;
+	//}
+	// Chapter 12-
+
+	//Chapter 12-Juggling Several Choices with Logical Operators
+
+	//int main()
+	//{
+	//	int planets = 8;
+	//	int friends = 6;
+	//	int potterBooks = 7;
+	//	int starWars = 6;
+	//	int months = 12;
+	//	int beatles = 4;
+	//	int avengers = 6;
+	//	int baseball = 9;
+	//	int basketball = 5;
+	//	int football = 11;
+	//	// first logical statement uses AND (&&) operator to test
+	//	if ((friends + beatles >= baseball) &&
+	//		(friends + avengers >= football))
+	//	{
+	//		printf("The cast of Friends and the Beatles could make a baseball team, \n");
+	//		printf("AND the cast of Friends plus the Avengers could make a football team.\n");
+	//	}
+	//	else
+	//	{
+	//		printf("either the Friends cannot make a baseball team with the Fab Four, \n");
+	//		printf("OR they can't make Football team with the Avengers (or both!)\n");
+	//	}
+	//
+	//	// second operator uses OR (||) to test
+	//	if ((starWars <= months) || potterBooks <= months)
+	//	{
+	//		printf("\nYou could read one HP book a month, and finish them all in less than a year,\n");
+	//		printf("OR you could see one Star Wars movie a month,\n");
+	//		printf("and finish them all in less than a year.\n");
+	//
+	//	}
+	//	else
+	//	{
+	//		printf("Neither can happen--too many books or movies,\n");
+	//		printf("Not enough time!\n\n");
+	//	}
+	//
+	//	// final logical statement uses the NOT (!) operator
+	//
+	//	if (!(baseball + basketball > football))
+	//	{
+	//		printf("\nThere are fewer baseball and basketball players\n");
+	//		printf("combined than football players.");
+	//
+	//	return 0;
+	//}
+
+	//int main()
+	//
+	//{
+	//
+	//	char name[25];
+	//
+	//
+	//
+	//	printf("what is your last name? ");
+	//	printf("(Please capitalize the first letter!)\n");
+	//
+	//	int n = scanf_s(" %s", name, (unsigned)_countof(name));//use countof macro to use actual size for buffer
+	//
+	//
+	//	printf("Items read = %d; Name given is: %s....\n", n, name); //check return value from scanf_s
+	//
+	//	if ((name[0] >= 'P') && (name[0] <= 'S'))
+	//
+	//	{
+	//		printf("You must go to room 232 for your tickets\n ");
+	//	}
+	//	else
+	//	{
+	//		printf("You can get your tickets in the lobby\n");
+	//
+	//	}
+	//	return 0;
+	//}
+
+	//Chapter 13-more operators
+
+	//Conditional operator replacing if else
+	// relation ? trueStatement : falseStatement;
+
+	//int main()
+	//
+	//{
+	//	int numPick;
+	//
+	//	printf("Pick an Integer between 1 and 100, ");
+	//	printf("The higher the better!\n");
+	//
+	//	int n = scanf_s(" %d", &numPick); //for int you do need &
+	//	printf("Items read = %d; Number picked = %d\n", n, numPick); //check return value from scanf_s
+	//
+	//	printf("%d %s divisible by 2.", numPick, (numPick % 2 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 3.", numPick, (numPick % 3 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 4.", numPick, (numPick % 4 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 5.", numPick, (numPick % 5 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 6.", numPick, (numPick % 6 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 7.", numPick, (numPick % 7 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 8.", numPick, (numPick % 8 == 0) ? ("is") : ("Is not"));
+	//	printf("\n%d %s divisible by 9.", numPick, (numPick % 9 == 0) ? ("is") : ("Is not"));
+	//
+	//
+	//	return 0;
+	//}
+
+	// ++ and -- operator to increase/decrease variable. Prefix comes first, postfix comes after everything else is calculated
+	//int main()
+	//
+	//{
+	//	int ctr = 0;
+	//
+	//	printf("Counter is at %d.\n", ++ctr);
+	//	printf("Counter is at %d.\n", ++ctr);
+	//	printf("Counter is at %d.\n", ++ctr);
+	//	printf("Counter is at %d.\n", ++ctr);
+	//	printf("Counter is at %d.\n", ++ctr);
+	//
+	//	printf("Counter is at %d.\n", --ctr);
+	//	printf("Counter is at %d.\n", --ctr);
+	//	printf("Counter is at %d.\n", --ctr);
+	//	printf("Counter is at %d.\n", --ctr);
+	//	printf("Counter is at %d.\n", --ctr);
+	//
+	//	return 0;
+	//}
+
+	//Chapter 14-Using loops to save time and effort.
+	//Use while loop on counter example to reduce code.
+	//int main()
+	//
+	//{
+	//	int ctr = 0;
+	//
+	//	while (ctr < 5)
+	//	{
+	//		printf("Counter is at %d. \n", ctr++);
+	//	}
+	//
+	//	while (ctr > 1)
+	//	{
+	//		printf("Counter is at %d. \n", ctr--);
+	//	}
+	//
+	//
+	//	return 0;
+	//}
+
+	//using do while loop
+
+	//int main()
+	//
+	//{
+	//	float num1, num2, result;
+	//	char choice;
+	//
+	//	do {
+	//		printf("Enter first number to multiply: ");
+	//		int n = scanf_s(" %f", &num1);
+	//		printf("Items read: %d. Number Chosen %.2f \n", n, num1); //check input from scanf
+	//
+	//		printf("Enter your second number to multiply: ");
+	//		int n2 = scanf_s(" %f", &num2);
+	//		printf("Items read: %d. Number Chosen %.2f \n", n2, num2); //check input from scanf
+	//
+	//		result = num1 * num2;
+	//		printf("%.2f time %.2f equals %.2f\n\n", num1, num2, result);
+	//
+	//		printf("Do you want another pair of numbers to multiply (Y/N)?\n");
+	//		char c = scanf_s(" %c", &choice);
+	//		printf("Items read: %d. Letter chosen: %c\n", c, choice); //check input from scanf
+	//
+	//		//If user enters lower case y/n, this if statement will convert to Y/N
+	//
+	//		if (choice == 'n')
+	//			{
+	//				choice == 'N';
+	//				printf("Goodbye!");
+	//			}
+	//
+	//	} while (choice != 'N' && choice != 'n');
+	//
+	//
+	//	return 0;
+	//}
+
+	//Chapter 15-Looking for another way to create loops
+	//Use for loop to give more control over while or do-while loops.
+	//Use for loop when you want to ++ or -- a variable through a loop
+
+	//int main()
+	//{
+	//	int ctr, numMovies, rating, favRating, leastRating;
+	//	char movieName[40], favorite[40], least[40];
+	//
+	//	//Initialize the favRating to 0 so any movie with any rating of
+	//	//1 or higher will replace it and the leastRating to 10 so any
+	//	//movie rated 9 or lower will replace it
+	//
+	//	favRating = 0;
+	//	leastRating = 10;
+	//
+	//	//find out how many movies the user has seen and can rate
+	//	//The loop will continue until they enter a number more than 0
+	//
+	//	do
+	//	{
+	//		printf("How many movies have you seen this year? ");
+	//		int n = scanf_s(" %d", &numMovies );
+	//		printf("items read: %d, number of movies entered: %d", n, numMovies ); //capture scanf input
+	//
+	//		if (numMovies < 1)
+	//		{
+	//			printf("No Movies!?\n Let's try again");
+	//		}
+	//
+	//	} while (numMovies < 1);
+	//
+	//	for (ctr = 1; ctr <= numMovies; ctr++)
+	//	{
+	//		//Get the name of the movies and the rating
+	//		printf("\nWhat was the name of the movie? 1 word titles only.");
+	//		scanf_s(" %s", movieName, (unsigned)_countof(movieName));
+	//		printf("On a scale of 1-10, what would you rate it? ");
+	//		scanf_s(" %d", &rating);
+	//
+	//		//Check whether it's their best-rated movie so far
+	//
+	//		if (rating > favRating)
+	//		{
+	//			strcpy_s(favorite, movieName);
+	//			favRating = rating;
+	//		}
+	//
+	//		//check whether it's their worst-rated movie so far
+	//
+	//		if (rating < leastRating)
+	//
+	//		{
+	//			strcpy_s(least, movieName);
+	//			leastRating = rating;
+	//		}
+	//	}
+	//
+	//			printf("\nYour favorite movie was %s. \n", favorite);
+	//			printf("\nYour least favorite movie was %s. \n", least);
+	//
+	//
+	//
+	//
+	//	return 0;
+	//}
+
+	//Chapter 16-Breaking in and out of looped code
+	//Break terminates while,do-while, and for loops
+	//continue forces a new cycle of a loop
+
+	//int main()
+	//{
+	//	int numTest;
+	//	float stTest, avg, total = 0.0;
+	//
+	//	//asks for up to 25v tests
+	//
+	//	for (numTest = 0; numTest, 25; numTest++)
+	//		{
+	//			//get test scores and check if -1 was entered
+	//
+	//			printf("\nWhat is the next student's test score? ");
+	//			scanf_s(" %f", &stTest);
+	//			if (stTest < 0.0) //if teacher enters -1 loop breaks
+	//
+	//			{
+	//				break;
+	//			}
+	//			total += stTest;
+	//
+	//		}
+	//	avg = total / numTest;
+	//	printf("\nThe average is %.1f%%.\n", avg);
+	//
+	//	return 0;
+	//}
+
+	//Chapter 17- Making the case for the switch statement
+
+//int main()
 //
-//	//Floating point needs & before variable e.g. &cost
-//	printf("How much does pizza cost in your area?");
-//	printf(" Enter as $XX.XX\n");
-//	scanf_s(" $%f", &cost);
+//{
+//	int choice{};
 //
-//	//Pizza topping is a string so doesn't need &
-//	printf("What is your favorite one-word pizza topping? \n");
-//	scanf_s(" %s", topping, 23);
+//	printf("What do you want to do?\n");
+//	printf("1: Add new contact\n");
+//	printf("2: Edit existing contact\n");
+//	printf("3: Call Contact\n");
+//	printf("4: Text Contact\n");
+//	printf("5: Exit\n");
+//	do
+//	{
+//		printf("Enter your choice: ");
+//		scanf_s(" %d", &choice);
+//		switch (choice)
+//		{
+//		case (1): printf("\nTo add you will need the contact's first name, Last name, and number.\n");
+//			break;
+//		case (2): printf("\nGet ready to enter the name of the contact you wish to change.\n");
+//			break;
+//		case (3): printf("\nWhich contact do you wish to call?\n");
+//			break;
+//		case (4): printf("\nWhich contact do you wish to text.\n");
+//			break;
+//		case (5): exit(1);
 //
-//	printf("How many slices of %s pizza", topping);
-//	printf(" can you eat in one sitting?\n");
-//	scanf_s(" %d", &slices);
-//
-//	printf("What is today's date (enter it in XX/XX/XX format).\n");
-//	scanf_s(" %d/%d/%d", &month, &day, &year);
-//
-//	printf("\n\nWhy not treat yourself to dinner on %d/%d/%d", month, day, year);
-//	printf("\nand have %d slices of %s pizza!\n", slices, topping);
-//	printf("It will only cost you $%.2f!\n\n\n", cost);
+//		default: printf("\n%d is not a valid choice. Try again.\n", choice);
+//			break;
+//		}
+//	} while ((choice < 1) || (choice > 5));
 //
 //	return 0;
 //}
 
-// Chapter 9-Crunching the numbers
-
-// Chapter 10-Powering up variables with assignments and expressions
-
-//int main()
-//{
-//	int ctr = 0;
-	//ctr = ctr + 1; 
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr + 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr + 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr + 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr + 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr - 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr - 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr - 1;
-	//printf("Counter is at %d\n", ctr);
-	//ctr = ctr - 1;
-	//printf("Counter is at %d\n", ctr);
-
-//use compund operators and place in print fuction for less code
-//	printf("Counter is at %d.\n", ctr += 1);
-//	printf("Counter is at %d.\n", ctr += 1);
-//	printf("Counter is at %d.\n", ctr += 1);
-//	printf("Counter is at %d.\n", ctr += 1);
-//	printf("Counter is at %d.\n", ctr += 1);
-//	printf("Counter is at %d.\n", ctr -= 1);
-//	printf("Counter is at %d.\n", ctr -= 1);
-//	printf("Counter is at %d.\n", ctr -= 1);
-//	printf("Counter is at %d.\n", ctr -= 1);
-//
-//	return 0;
-//}
-
-// Chapter 11- Testing data to pick a path Else if
-// if format:
-// if (condition) { code block }
-
-//#define CURRENTYEAR 2020
-//
-//int main()
-//{
-//	int yearBorn, age;
-//
-//	printf("What year were you born?\n");
-//	scanf_s(" %d", &yearBorn);
-//
-//	if (yearBorn > CURRENTYEAR)
-//
-//	{
-//		printf("Really?, You haven't been born yet?\n");
-//		printf("congratulations on time travel!\n");
-//		/*printf("Want to try again with a different year?\n");
-//		printf("What year were you born?\n");
-//		scanf_s(" %d", &yearBorn);*/
-//	}
-//
-//	age = CURRENTYEAR - yearBorn;
-//
-//	printf("\nSo this year you will turn %d on your birthday!\n", age);
-//
-//	if ((yearBorn % 4) == 0)
-//	
-//	{
-//		printf("\nYou were born in a leap year--cool!\n");
-//
-//	}
-//
-//
-//	return 0;
-//}
-
-//int main()
-//{
-//	int prefer;
-//	
-//	printf("on a scale of 1-10, how happy are you?\n");
-//	scanf_s(" %d", &prefer);
-//
-//	if (prefer >= 8)
-//	{
-//		printf("Feeling good that's awesome!\n");
-//	}
-//	else if (prefer >= 5)
-//	{
-//		printf("Better than average!\n");
-//		printf("Focus on the positive and tomorrow will get better\n");
-//	}
-//
-//	else if (prefer >= 3)
-//	{
-//		printf("Sorry you're nto feeling so great.\n");
-//
-//	}
-//	else
-//	{
-//		printf("Remember it's always darkest before the dawn\n");
-//	}
-//
-//	return 0;
-//}
-// Chapter 12-
-
-//Chapter 12-Juggling Several Choices with Logical Operators
-
-//int main()
-//{
-//	int planets = 8;
-//	int friends = 6;
-//	int potterBooks = 7;
-//	int starWars = 6;
-//	int months = 12;
-//	int beatles = 4;
-//	int avengers = 6;
-//	int baseball = 9;
-//	int basketball = 5;
-//	int football = 11;
-//	// first logical statement uses AND (&&) operator to test
-//	if ((friends + beatles >= baseball) &&
-//		(friends + avengers >= football))
-//	{
-//		printf("The cast of Friends and the Beatles could make a baseball team, \n");
-//		printf("AND the cast of Friends plus the Avengers could make a football team.\n");
-//	}
-//	else
-//	{
-//		printf("either the Friends cannot make a baseball team with the Fab Four, \n");
-//		printf("OR they can't make Football team with the Avengers (or both!)\n");
-//	}
-//
-//	// second operator uses OR (||) to test
-//	if ((starWars <= months) || potterBooks <= months)
-//	{
-//		printf("\nYou could read one HP book a month, and finish them all in less than a year,\n");
-//		printf("OR you could see one Star Wars movie a month,\n");
-//		printf("and finish them all in less than a year.\n");
-//		
-//	}
-//	else
-//	{
-//		printf("Neither can happen--too many books or movies,\n");
-//		printf("Not enough time!\n\n");
-//	}
-//
-//	// final logical statement uses the NOT (!) operator
-//
-//	if (!(baseball + basketball > football))
-//	{
-//		printf("\nThere are fewer baseball and basketball players\n");
-//		printf("combined than football players.");
-//		
-//	return 0;
-//}
+//Example 2 from Ch 17
 
 //int main()
 //
 //{
-//	
-//	char name[25];
-//	
-//	
+//	int choice1;
+//	int choice2;
 //
-//	printf("what is your last name? ");
-//	printf("(Please capitalize the first letter!)\n");
-//		
-//	int n = scanf_s(" %s", name, (unsigned)_countof(name));//use countof macro to use actual size for buffer
+//	printf("What do you want to see?\n");
+//	printf("1: The 1980's\n");
+//	printf("2: The 1990's\n");
+//	printf("3: The 2000's\n");
+//	printf("4: Quit\n");
 //
-//	
-//	printf("Items read = %d; Name given is: %s....\n", n, name); //check return value from scanf_s
-//
-//	if ((name[0] >= 'P') && (name[0] <= 'S'))
-//
-//	{
-//		printf("You must go to room 232 for your tickets\n ");
-//	}
-//	else
-//	{
-//		printf("You can get your tickets in the lobby\n");
-//
-//	}
-//	return 0;
-//}
-
-//Chapter 13-more operators
-
-//Conditional operator replacing if else
-// relation ? trueStatement : falseStatement;
-
-//int main()
-//
-//{
-//	int numPick;
-//
-//	printf("Pick an Integer between 1 and 100, ");
-//	printf("The higher the better!\n");
-//
-//	int n = scanf_s(" %d", &numPick); //for int you do need &
-//	printf("Items read = %d; Number picked = %d\n", n, numPick); //check return value from scanf_s
-//
-//	printf("%d %s divisible by 2.", numPick, (numPick % 2 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 3.", numPick, (numPick % 3 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 4.", numPick, (numPick % 4 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 5.", numPick, (numPick % 5 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 6.", numPick, (numPick % 6 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 7.", numPick, (numPick % 7 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 8.", numPick, (numPick % 8 == 0) ? ("is") : ("Is not"));
-//	printf("\n%d %s divisible by 9.", numPick, (numPick % 9 == 0) ? ("is") : ("Is not"));
-//
-//
-//	return 0;
-//}
-
-// ++ and -- operator to increase/decrease variable. Prefix comes first, postfix comes after everything else is calculated
-//int main()
-//
-//{
-//	int ctr = 0;
-//
-//	printf("Counter is at %d.\n", ++ctr);
-//	printf("Counter is at %d.\n", ++ctr);
-//	printf("Counter is at %d.\n", ++ctr);
-//	printf("Counter is at %d.\n", ++ctr);
-//	printf("Counter is at %d.\n", ++ctr);
-//
-//	printf("Counter is at %d.\n", --ctr);
-//	printf("Counter is at %d.\n", --ctr);
-//	printf("Counter is at %d.\n", --ctr);
-//	printf("Counter is at %d.\n", --ctr);
-//	printf("Counter is at %d.\n", --ctr);
-//
-//	return 0;
-//}
-
-//Chapter 14-Using loops to save time and effort. 
-//Use while loop on counter example to reduce code.
-//int main()
-//
-//{
-//	int ctr = 0;
-//
-//	while (ctr < 5)
-//	{
-//		printf("Counter is at %d. \n", ctr++);
-//	}
-//
-//	while (ctr > 1)
-//	{
-//		printf("Counter is at %d. \n", ctr--);
-//	}
-//
-//
-//	return 0;
-//}
-
-//using do while loop
-
-//int main()
-//
-//{
-//	float num1, num2, result;
-//	char choice;
-//
-//	do {
-//		printf("Enter first number to multiply: ");
-//		int n = scanf_s(" %f", &num1);
-//		printf("Items read: %d. Number Chosen %.2f \n", n, num1); //check input from scanf
-//
-//		printf("Enter your second number to multiply: ");
-//		int n2 = scanf_s(" %f", &num2);
-//		printf("Items read: %d. Number Chosen %.2f \n", n2, num2); //check input from scanf
-//
-//		result = num1 * num2;
-//		printf("%.2f time %.2f equals %.2f\n\n", num1, num2, result);
-//
-//		printf("Do you want another pair of numbers to multiply (Y/N)?\n");
-//		char c = scanf_s(" %c", &choice);
-//		printf("Items read: %d. Letter chosen: %c\n", c, choice); //check input from scanf
-//
-//		//If user enters lower case y/n, this if statement will convert to Y/N
-//
-//		if (choice == 'n')
-//			{
-//				choice == 'N';
-//				printf("Goodbye!");
-//			}
-//
-//	} while (choice != 'N' && choice != 'n');
-//
-//
-//	return 0;
-//}
-
-//Chapter 15-Looking for another way to create loops
-//Use for loop to give more control over while or do-while loops. 
-//Use for loop when you want to ++ or -- a variable through a loop
-
-//int main()
-//{
-//	int ctr, numMovies, rating, favRating, leastRating;
-//	char movieName[40], favorite[40], least[40];
-//
-//	//Initialize the favRating to 0 so any movie with any rating of
-//	//1 or higher will replace it and the leastRating to 10 so any
-//	//movie rated 9 or lower will replace it
-//
-//	favRating = 0;
-//	leastRating = 10;
-//
-//	//find out how many movies the user has seen and can rate
-//	//The loop will continue until they enter a number more than 0
+//	//The top menu choice and the switch stement that makes the resulting
+//	//info appear are encase in a do-while loop that ensures one of the 4 menu choices are made
 //
 //	do
 //	{
-//		printf("How many movies have you seen this year? ");
-//		int n = scanf_s(" %d", &numMovies );
-//		printf("items read: %d, number of movies entered: %d", n, numMovies ); //capture scanf input
-//
-//		if (numMovies < 1)
+//		printf("Enter your choice:");
+//		scanf_s(" %d", &choice1);
+//		switch (choice1)
 //		{
-//			printf("No Movies!?\n Let's try again");
+//		case (1):
+//		{
+//			printf("\n\n what would you like to see?\n");
+//			printf("1: Baseball\n");
+//			printf("2: The Movies\n");
+//			printf("3: US Presidents\n");
+//			printf("4: Quit\n");
+//
+//			printf("Enter your choice:");
+//			scanf_s(" %d", &choice2);
+//
+//			if (choice2 == 1)
+//			{
+//				printf("\n\nWorld Series Champions of the 1980's:\n");
+//				printf("1980: PA Phillies\n");
+//				printf("1981: LA Dodgers\n");
+//				printf("1982: SL Cardinals\n");
+//				printf("1983: Orioles\n");
+//				printf("1984: DT Tigers\n");
+//				printf("1985: KC Royals\n");
+//				printf("1986: NY Mets\n");
+//				printf("1987: MN Twins\n");
+//				printf("1988: LA Dodgers\n");
+//				printf("1989: Oakland A's\n");
+//				break;
+//			}
+//			else if (choice2 == 2)
+//			{
+//				printf("\n\nOscar-Winning Movies in the 1980's:\n");
+//				printf("1980: Prdinary People \n");
+//				printf("1981: chariots of Fire\n");
+//				printf("1982: Gandhi\n");
+//				printf("1983: Terms of endearment\n");
+//				printf("1984: Amadeus\n");
+//				printf("1985: Platoon\n");
+//				printf("1986: The last emperor\n");
+//				printf("1987: Rain Man\n");
+//				printf("1988: Driving Miss Daisy\n");
+//				printf("\n\n\n");
+//				break;
+//			}
+//			else if (choice2 == 3)
+//			{
+//				printf("\n\nPresidents in the 1980's:\n");
+//				printf("1980: Jimmy Carter\n");
+//				printf("1981-1988:Ronald Reagan\n");
+//				printf("George Bush\n");
+//				printf("\n\n\n");
+//				break;
+//			}
+//			else if (choice2 == 4)
+//			{
+//				exit(1);
+//			}
+//			else
+//			{
+//				printf("Sorry, that is not a valid choice!\n");
+//				break;
+//			}
 //		}
 //
-//	} while (numMovies < 1);
+//		//Case for the 1990s but no data-validation do-while loop
 //
-//	for (ctr = 1; ctr <= numMovies; ctr++)
-//	{
-//		//Get the name of the movies and the rating
-//		printf("\nWhat was the name of the movie? 1 word titles only.");
-//		scanf_s(" %s", movieName, (unsigned)_countof(movieName));
-//		printf("On a scale of 1-10, what would you rate it? ");
-//		scanf_s(" %d", &rating);
-//
-//		//Check whether it's their best-rated movie so far
-//
-//		if (rating > favRating)
+//		case(2):
 //		{
-//			strcpy_s(favorite, movieName);
-//			favRating = rating;
+//			printf("\n\n what would you like to see?\n");
+//			printf("1: Baseball\n");
+//			printf("2: The Movies\n");
+//			printf("3: US Presidents\n");
+//			printf("4: Quit\n");
+//
+//			printf("Enter your choice:");
+//			scanf_s(" %d", &choice2);
+//
+//			if (choice2 == 1)
+//			{
+//				printf("\n\nWorld Series Champions of the 1990's:\n");
+//				printf("1990: PA Phillies\n");
+//				printf("1991: LA Dodgers\n");
+//				printf("1992: SL Cardinals\n");
+//				printf("1993: Orioles\n");
+//				printf("1994: DT Tigers\n");
+//				printf("1995: KC Royals\n");
+//				printf("1996: NY Mets\n");
+//				printf("1997: MN Twins\n");
+//				printf("1998: LA Dodgers\n");
+//				printf("\n\n\n");
+//				break;
+//			}
+//			else if (choice2 == 2)
+//			{
+//				printf("\n\nOscar-Winning Movies in the 1990's:\n");
+//				printf("1990: Prdinary People \n");
+//				printf("1991: chariots of Fire\n");
+//				printf("1992: Gandhi\n");
+//				printf("1993: Terms of endearment\n");
+//				printf("1994: Amadeus\n");
+//				printf("1995: Platoon\n");
+//				printf("1996: The last emperor\n");
+//				printf("1997: Rain Man\n");
+//				printf("1998: Driving Miss Daisy\n");
+//				printf("\n\n\n");
+//				break;
+//			}
+//			else if (choice2 == 3)
+//			{
+//				printf("\n\nPresidents in the 1990's:\n");
+//				printf("1990-1992: George Bush\n");
+//				printf("1993-1999: Bill Clinton\n");
+//				printf("\n\n\n");
+//				break;
+//			}
+//			else if (choice2 == 4)
+//			{
+//				exit(1);
+//			}
+//			else
+//			{
+//				printf("sorry that is not a valid choice!\n");
+//				break;
+//			}
 //		}
-//
-//		//check whether it's their worst-rated movie so far
-//
-//		if (rating < leastRating)
-//
-//		{
-//			strcpy_s(least, movieName);
-//			leastRating = rating;
+//		default: printf("\n%d is nnot a valid choice.\n", choice1);
+//			printf("Try again.\n");
+//			break;
 //		}
-//	}
-//
-//			printf("\nYour favorite movie was %s. \n", favorite);
-//			printf("\nYour least favorite movie was %s. \n", least);
-//
-//		
-//
+//	} while ((choice1 < 1) || (choice1 > 4));
 //
 //	return 0;
 //}
 
-//Chapter 16-Breaking in and out of looped code
-//Break terminates while,do-while, and for loops
-//continue forces a new cycle of a loop
+// Chapter 18-increasing programs output/input
 
-int main()
-{
-	int numTest;
-	float stTest, avg, total = 0.0;
-	
-	//asks for up to 25v tests
+//Demonstration of putchar()
 
-	for (numTest = 0; numTest, 25; numTest++)
-		{
-			//get test scores and check if -1 was entered
+//int main()
+//{
+//	int i;
+//	char msg[] = "I'm having fun learning to code!";
+//
+//	for (i = 0; i < strlen(msg); i++)
+//	{
+//		putchar(msg[i]); //output a single character
+//	}
+//	putchar('\n'); //One line break after the loop
+//
+//	return 0;
+//}
 
-			printf("\nWhat is the next student's test score? ");
-			scanf_s(" %f", &stTest);
-			if (stTest < 0.0) //if teacher enters -1 loop breaks
+//Demonstration of getchar()
 
-			{
-				break;
-			}
-			total += stTest;
+//int main()
+//{
+//	int i;
+//	char msg[25];
+//
+//	printf("Type up to 25 characters and press enter....\n");
+//	for (i = 0; i < 25; i++)
+//	{
+//		msg[i] = getchar(); //Outputs single character
+//		if (msg[i] == '\n')
+//		{
+//			i--;
+//			break;
+//		}
+//	}
+//
+//	putchar('\n');
+//
+//	for (; i >= 0; i--)
+//	{
+//		putchar(msg[i]);
+//	}
+//
+//	putchar('\n');
+//
+//	return 0;
+//}
 
-		}
-	avg = total / numTest;
-	printf("\nThe average is %.1f%%.\n", avg);
-
-	return 0;
-}
-
-//Chapter 17- Making the case for the switch statement
+//Chapter 19 Getting more from your strings
