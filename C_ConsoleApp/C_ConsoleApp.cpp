@@ -4,6 +4,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string>
 
 //int main()
 //{
@@ -890,3 +892,84 @@
 //}
 
 //Chapter 19 Getting more from your strings
+//Tests whether username and password have upper, lowcase and a digit.
+
+//int main()
+//
+//{
+//	int i;
+//	int hasUpper, hasLower, hasDigit;
+//	char user[25], password[25];
+//
+//	//initialize all 3 test variables to 0-false
+//
+//	hasUpper = hasLower = hasDigit = 0;
+//
+//	printf("What is your username?");
+//	scanf_s(" %s", user, unsigned(_countof(user)));
+//
+//	printf("Please create a password");
+//	scanf_s(" %s", password, unsigned(_countof(password)));
+//
+//	//This loops goes through each char of the password and tests whether it's a digit, upper, or lowercase letter
+//
+//	for (i = 0; i < strlen(password); i++)
+//	{
+//		if (isdigit(password[i]))
+//		{
+//			hasDigit = 1;
+//			continue;
+//		}
+//		if (isupper(password[i]))
+//		{
+//			hasUpper = 1;
+//			continue;
+//		}
+//		if (islower(password[i]))
+//		{
+//			hasLower = 1;
+//		}
+//	}
+//
+//	//will only execute if all 3 variables below are 1
+//
+//	if ((hasDigit) && (hasUpper) && (hasLower))
+//	{
+//		printf("\n\nExcelent work, %s, \n", user);
+//		printf("Your password has upper and lowercase letters and numbers. ");
+//	}
+//	else
+//	{
+//		printf("\n\nYou should consider a new password, %s, \n", user);
+//		printf("to one that uses a upper and lowercase letters and a number.");
+//	}
+//
+//	return 0;
+//}
+
+//puts() gets() and strcat() use puts/gets instead of printf and scanf
+
+//int main()
+//{
+//	char city[15];
+//	//2 chars for state abreviatio and 1 for null 0
+//	char st[3];
+//	char fullLocation[18] = "";
+//	puts("what town do you live in? ");
+//	gets_s(city);
+//
+//	puts("What state do you live in? ");
+//	gets_s(st);
+//
+//	//concatenate the strings
+//	strcat_s(fullLocation, city);
+//	strcat_s(fullLocation, ","); //Adds comma and space between city and state
+//	strcat_s(fullLocation, st);
+//
+//	puts("\nYou live in ");
+//	puts(fullLocation);
+//
+//	return 0;
+//}
+
+//Chapter 20 Advanced math for your computer
