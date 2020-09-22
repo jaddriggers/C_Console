@@ -1059,3 +1059,37 @@
 //}
 
 //Chapter 21-Dealing with Arrays
+//program creates an array of 10 game scores for a basketball player
+
+//int main()
+//{
+//	int gameScores[10] = { 12, 5, 21, 15, 32, 10 }; //initialize array with first 6 scores
+//	int totalPoints = 0; //set to 0
+//	int i;
+//	float avg;
+//
+//	//Only need scores for the last 4 games so the loop wioth cover array elements 6-9
+//	for (i = 6; i < 10; i++)
+//	{
+//		//Add one to the array number as the user won't think of the first game as 0, but game 1
+//		printf("what did the player score in game %d? ", i + 1);
+//		scanf_s(" %d", &gameScores[i]);
+//	}
+//
+//	//loop through the socres to get total points in order to calculate average
+//
+//	for (i = 0; i < 10; i++)
+//	{
+//		totalPoints += gameScores[i];
+//	}
+//
+//	//Use floating point var for the avg as it is likely to be between two integers
+//
+//	avg = ((float)totalPoints / 10);
+//
+//	printf("The player's scoring average is %.1f.\n", avg);
+//
+//	return 0;
+//}
+
+//chapter 22-Searching Arrays
