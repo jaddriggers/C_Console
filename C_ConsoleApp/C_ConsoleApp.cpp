@@ -1092,4 +1092,83 @@
 //	return 0;
 //}
 
-//chapter 22-Searching Arrays
+//Chapter 22-Searching Arrays
+
+//Takes an ID from user and checks against list of customer in database. If customer exists, uses array element to check current balance and warns if balance > $100
+
+//int main()
+//{
+//	int ctr; //loop counter
+//	int idSearch; //customer ID key
+//	int found = 0; //Will be true (1) if found
+//
+//	//Defines the 10 elemnts in the two parallel arrays
+//
+//	int custID[10] = { 313, 453, 502, 101, 892, 475, 792, 912, 343, 633 };
+//	float custBal[10] = { 0.00, 45.43, 71.23, 301.56, 9.08, 192.41, 389.00, 229.67, 18.31, 59.54 };
+//	float overBal = custBal[10] - 100;
+//
+//	printf("\n\n ***Customer balance lookup***\n");
+//	printf("What customer number do you need to check? ");
+//	scanf_s(" %d", &idSearch);
+//
+//	//Loop through customer ID's
+//	for (ctr = 0; ctr < 10; ctr++)
+//	{
+//		if (idSearch == custID[ctr])
+//		{
+//			found = 1;
+//			break;
+//		}
+//	}
+//	if (found)
+//	{
+//		if (custBal[ctr] > 100.00)
+//		{
+//			printf("\n That customer's balance is $%.2f. No more credit!", custBal[ctr]);
+//			//printf("\nCustomer ID %.2f is $.2f over the $100 limit! ", custID[ctr], overBal);
+//		}
+//		else
+//		{
+//			printf("\n** The customer's credit is $%.2f and is good!\n", custBal[ctr]);
+//		}
+//	}
+//	else
+//	{
+//		printf("** You must have typed an incorrect ID. \n ID %3d was not found. \n", idSearch);
+//	}
+//
+//	return 0;
+//}
+
+//Program fills 3 arrays with a player's total points, rebounds, and assist.
+//It loops through the scoring array and finds the game witht he most points then prints the totals from all 4 categories.
+
+//int main()
+//{
+//	int gameScores[10] = { 12,5,21,15,32,10,6,31,11,10 };
+//	int gameRebounds[10] = { 5,7,1,5,10,3,0,7,6,4 };
+//	int gameAssists[10] = { 2,9,4,3,6,1,11,6,9,10 };
+//	int bestGame = 0;
+//	int gmMark = 0; //Marks which game is best scoring
+//	int i;
+//
+//	for (i = 0; i < 10; i++)
+//	{
+//		if (gameScores[i] > bestGame)
+//		{
+//			bestGame = gameScores[i];
+//			gmMark = i;
+//		}
+//	}
+//
+//	//print out details of best scoruing game. since arrays start at 0, add 1 to game number
+//
+//	printf("\n\nThe player's best scoring game totals:\n");
+//	printf("The best game was game #%d\n", gmMark + 1);
+//	printf("Scored %d points, %d rebounds, and %d assists\n", gameScores[gmMark], gameRebounds[gmMark], gameAssists[gmMark]);
+//
+//	return 0;
+//}
+
+//Chapter 23-Alphabetizing and arranging your data
