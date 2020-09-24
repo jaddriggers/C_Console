@@ -1172,3 +1172,143 @@
 //}
 
 //Chapter 23-Alphabetizing and arranging your data
+//Bubble sort
+
+//int main()
+//{
+//	int ctr, inner, outer, didSwap, temp;
+//	int nums[10];
+//	time_t t;
+//
+//	//Generates random numbers
+//	srand(time(&t));
+//
+//	//fills array with random numbers from 1 to 100
+//	for (ctr = 0; ctr < 10; ctr++)
+//	{
+//		nums[ctr] = (rand() % 99) + 1;
+//	}
+//
+//	//list the array before sorting
+//
+//	puts("\nHere is the list before the sort:");
+//	for (ctr = 0; ctr < 10; ctr++)
+//	{
+//		printf("%d\n", nums[ctr]);
+//	}
+//
+//	//sort the array
+//
+//	for (outer = 0; outer < 9; outer++)
+//	{
+//		didSwap = 0; //Becomes 1(true) if list is not yet ordered
+//		for (inner = outer; inner < 10; inner++)
+//		{
+//			if (nums[inner] < nums[outer])
+//			{
+//				temp = nums[inner];
+//				nums[inner] = nums[outer];
+//				nums[outer] = temp;
+//				didSwap = 1;
+//			}
+//		}
+//		if (didSwap == 0)
+//		{
+//			break;
+//		}
+//	}
+//
+//	//List the array after sorting
+//	puts("\nHere is the list after sorting:");
+//	for (ctr = 0; ctr < 10; ctr++)
+//	{
+//		printf("%d\n", nums[ctr]);
+//	}
+//	return 0;
+//}
+
+//Searches customer ID
+
+//int main()
+//{
+//	int ctr; //Loop counter
+//	int idSearch; //customer key to look for
+//	int found = 0; //1 if true
+//
+//	//Defines the 10 elemts in each of the parallel arrays
+//	int custID[10] = { 313,453,502,101,892,475,792,912,343,633 };
+//	float custBal[10] = { 0.00,45.43,71.23,301.56,9.08,192.41,389.00,229.67,18.31,59.54 };
+//	int tempID, inner, outer, didSwap, i; //For sorting
+//	float tempBal;
+//
+//	//First, sort the arrays by customerID
+//
+//	for (outer = 0; outer < 9; outer++)
+//	{
+//		didSwap = 0; //1 if true if list is not yet ordered
+//		for (inner = outer; inner < 10; inner++)
+//		{
+//			if (custID[inner] < custID[outer])
+//			{
+//				tempID = custID[inner]; //Must switch both arrays or they are no longer linked
+//				tempBal = custBal[inner];
+//				custID[inner] = custID[outer];
+//				custBal[inner] = custBal[outer];
+//				custID[outer] = tempID;
+//				custBal[outer] = tempBal;
+//				didSwap = 1;
+//			}
+//			if (didSwap == 0)
+//			{
+//				break;
+//			}
+//		}
+//	}
+//	//List the array after sorting
+//	//puts("\nHere is the list after sorting:");
+//	//for (ctr = 0; ctr < 10; ctr++)
+//	//{
+//	//	printf("%d\n", idSearch);
+//	//}
+//
+//	//Interact with user looking for a balance
+//	printf("\n\n***customer balance lookup***");
+//	printf("What is the customer number? ");
+//	scanf_s(" %d", &idSearch);
+//
+//	//Look for the ID in the array
+//	for (ctr = 0; ctr < 10; ctr++)
+//	{
+//		if (idSearch == custID[ctr]) //do they match?
+//		{
+//			found = 1; //Match is set to True
+//			break; //o need to keep looping so break out of loop
+//		}
+//		if (custID[ctr] > idSearch) //No need to keep searching
+//		{
+//			break;
+//		}
+//	}
+//
+//	//Once the loop has completed, the ID was either found or not
+//
+//	if (found)
+//	{
+//		if (custBal[ctr] > 100)
+//		{
+//			printf("\n** That customer's balance is $%.2f. No additional credit!\n", custBal[ctr]);
+//		}
+//		else //balance is less than $100
+//		{
+//			printf("\n** The customer's with ID %3d's credit is good!\n", idSearch);
+//		}
+//	}
+//	else //Id was not found
+//	{
+//		printf("** You have entered an incorrect ID. ID %3d was not found in the list.\n", idSearch);
+//	}
+//
+//	return 0;
+//}
+
+//Chapter 24-solving the mystery of pointers
